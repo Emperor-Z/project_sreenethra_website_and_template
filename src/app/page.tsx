@@ -41,9 +41,9 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Expert Eye Care Services
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              {hospitalInfo.mission}
-            </p>
+                              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                    {hospitalInfo.description}
+                  </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/schedule"
@@ -134,7 +134,7 @@ export default function HomePage() {
             <div className="text-center">
               <Phone className="w-12 h-12 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-              <p className="text-white/90">{hospitalInfo.phoneNumbers[0]}</p>
+              <p className="text-white/90">{hospitalInfo.mainBranch.phone}</p>
             </div>
             <div className="text-center">
               <Mail className="w-12 h-12 mx-auto mb-4" />
